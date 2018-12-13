@@ -1,0 +1,329 @@
+object FormMain: TFormMain
+  Left = 0
+  Top = 0
+  Caption = 'FormMain'
+  ClientHeight = 633
+  ClientWidth = 320
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnActivate = FormActivate
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  OnKeyDown = FormKeyDown
+  DesignerMasterStyle = 0
+  object sbClient: TVertScrollBox
+    Align = Client
+    ClipChildren = True
+    Size.Width = 320.000000000000000000
+    Size.Height = 633.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    Viewport.Width = 320.000000000000000000
+    Viewport.Height = 633.000000000000000000
+    object btnAllBig: TButton
+      Tag = 3
+      Position.X = 168.000000000000000000
+      Position.Y = 201.000000000000000000
+      Size.Width = 130.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      Text = #25972#20307#25918#22823
+      OnClick = btnTextFontClick
+    end
+    object btnCenter: TButton
+      Tag = 1
+      Position.X = 112.000000000000000000
+      Position.Y = 112.000000000000000000
+      Size.Width = 80.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+      Text = #23621#20013
+      OnClick = btnTextAliginClick
+    end
+    object btnHBig: TButton
+      Tag = 2
+      Position.X = 16.000000000000000000
+      Position.Y = 225.000000000000000000
+      Size.Width = 130.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 2
+      Text = #27178#21521#25918#22823
+      OnClick = btnTextFontClick
+    end
+    object btnInit: TButton
+      Position.X = 8.000000000000000000
+      Position.Y = 16.000000000000000000
+      TabOrder = 3
+      Text = #21021#22987
+      OnClick = btnInitClick
+    end
+    object btnLeft: TButton
+      Position.X = 16.000000000000000000
+      Position.Y = 112.000000000000000000
+      Size.Width = 80.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 4
+      Text = #23621#24038
+      OnClick = btnTextAliginClick
+    end
+    object btnNormal: TButton
+      Position.X = 16.000000000000000000
+      Position.Y = 201.000000000000000000
+      Size.Width = 130.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 5
+      Text = #27491#24120
+      OnClick = btnTextFontClick
+    end
+    object btnOutputImage: TButton
+      Position.X = 176.000000000000000000
+      Position.Y = 387.000000000000000000
+      Size.Width = 129.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 7
+      Text = #25171#21360#22270#29255
+      OnClick = btnOutputImageClick
+    end
+    object btnOutputText: TButton
+      Position.X = 80.000000000000000000
+      Position.Y = 288.000000000000000000
+      Size.Width = 129.000000000000000000
+      Size.Height = 33.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 8
+      Text = #25171#21360#25991#23383
+      OnClick = btnOutputTextClick
+    end
+    object btnPrintUnicode: TButton
+      Position.X = 88.000000000000000000
+      Position.Y = 144.000000000000000000
+      Size.Width = 145.000000000000000000
+      Size.Height = 26.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 9
+      Text = #25171#21360'Unicode'
+      OnClick = btnPrintUnicodeClick
+    end
+    object btnPurcaseOne: TButton
+      Position.X = 16.000000000000000000
+      Position.Y = 249.000000000000000000
+      Size.Width = 80.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 10
+      Text = #27169#29256#19968
+      OnClick = btnPurcaseOneClick
+    end
+    object btnPurcaseThree: TButton
+      Tag = 2
+      Position.X = 216.000000000000000000
+      Position.Y = 249.000000000000000000
+      Size.Width = 80.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 11
+      Text = #27169#29256#19977
+      OnClick = btnPurcaseOneClick
+    end
+    object btnPurcaseTwo: TButton
+      Tag = 1
+      Position.X = 112.000000000000000000
+      Position.Y = 249.000000000000000000
+      Size.Width = 80.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 12
+      Text = #27169#26495#20108
+      OnClick = btnPurcaseOneClick
+    end
+    object btnRight: TButton
+      Tag = 2
+      Position.X = 216.000000000000000000
+      Position.Y = 112.000000000000000000
+      Size.Width = 80.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 13
+      Text = #23621#21491
+      OnClick = btnTextAliginClick
+    end
+    object btnScanner: TButton
+      Position.X = 48.000000000000000000
+      Position.Y = 496.000000000000000000
+      Size.Width = 209.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 14
+      Text = #32418#22806#25195#25551
+      OnClick = btnScannerClick
+    end
+    object btnVBig: TButton
+      Tag = 1
+      Position.X = 168.000000000000000000
+      Position.Y = 225.000000000000000000
+      Size.Width = 130.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 15
+      Text = #32437#21521#25918#22823
+      OnClick = btnTextFontClick
+    end
+    object MemoText: TMemo
+      Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+      DataDetectorTypes = []
+      Lines.Strings = (
+        '123456789')
+      TextSettings.WordWrap = True
+      Position.X = 8.000000000000000000
+      Position.Y = 56.000000000000000000
+      Size.Width = 289.000000000000000000
+      Size.Height = 50.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 17
+      Viewport.Width = 285.000000000000000000
+      Viewport.Height = 46.000000000000000000
+    end
+    object rbText1: TRadioButton
+      IsChecked = True
+      Position.X = 8.000000000000000000
+      Position.Y = 177.000000000000000000
+      Size.Width = 65.000000000000000000
+      Size.Height = 19.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 18
+      Text = #23383#20307'1'
+      OnChange = rbTextChange
+    end
+    object rbText2: TRadioButton
+      Position.X = 80.000000000000000000
+      Position.Y = 177.000000000000000000
+      Size.Width = 65.000000000000000000
+      Size.Height = 19.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 19
+      Text = #23383#20307'2'
+      OnChange = rbTextChange
+    end
+    object btnChoicePic: TButton
+      Action = TakePhotoFromLibraryAction1
+      Enabled = True
+      ImageIndex = -1
+      Position.X = 176.000000000000000000
+      Position.Y = 568.000000000000000000
+      Size.Width = 129.000000000000000000
+      Size.Height = 25.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 6
+      Text = #36873#25321#25171#21360#29031#29255
+      Visible = False
+    end
+    object Image1: TImage
+      MultiResBitmap.Height = 128
+      MultiResBitmap.Width = 128
+      MultiResBitmap.LoadSize = 2
+      MultiResBitmap = <
+        item
+        end>
+      MarginWrapMode = Fit
+      Position.X = 12.000000000000000000
+      Position.Y = 328.000000000000000000
+      Size.Width = 149.000000000000000000
+      Size.Height = 145.000000000000000000
+      Size.PlatformDefault = False
+    end
+    object cmbChoiceImageType: TComboBox
+      Items.Strings = (
+        'POINT'
+        'GRAY'
+        'RASTER')
+      ItemIndex = 0
+      Position.X = 224.000000000000000000
+      Position.Y = 328.000000000000000000
+      Size.Width = 65.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 22
+      OnChange = cmbChoiceImageTypeChange
+    end
+    object SkinFMXLabel1: TLabel
+      Position.X = 184.000000000000000000
+      Position.Y = 328.000000000000000000
+      Size.Width = 49.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+      Text = #31867#22411':'
+    end
+    object btnECode: TButton
+      Position.X = 176.000000000000000000
+      Position.Y = 360.000000000000000000
+      Size.Width = 129.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 26
+      Text = #29983#25104#20108#32500#30721
+      OnClick = btnECodeClick
+    end
+    object btnTCode: TButton
+      Position.X = 176.000000000000000000
+      Position.Y = 416.000000000000000000
+      Size.Width = 129.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 25
+      Text = #25171#21360#26465#30721
+      OnClick = btnTCodeClick
+    end
+    object SkinFMXLabel2: TLabel
+      Position.X = 96.000000000000000000
+      Position.Y = 16.000000000000000000
+      Size.Width = 33.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+      Text = #35821#35328':'
+    end
+    object cbLanguage: TComboBox
+      ItemIndex = 0
+      Position.X = 128.000000000000000000
+      Position.Y = 9.000000000000000000
+      Size.Width = 169.000000000000000000
+      Size.Height = 34.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 21
+      OnChange = cbLanguageChange
+    end
+    object memScanResult: TMemo
+      Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+      DataDetectorTypes = []
+      Lines.Strings = (
+        '123456789')
+      TextSettings.WordWrap = True
+      Position.X = 16.000000000000000000
+      Position.Y = 528.000000000000000000
+      Size.Width = 289.000000000000000000
+      Size.Height = 74.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 16
+      Viewport.Width = 285.000000000000000000
+      Viewport.Height = 70.000000000000000000
+    end
+  end
+  object MediaPlayer: TMediaPlayer
+    Left = 264
+    Top = 488
+  end
+  object ActionList1: TActionList
+    Left = 144
+    Top = 560
+    object TakePhotoFromLibraryAction1: TTakePhotoFromLibraryAction
+      Category = 'Media Library'
+      OnDidFinishTaking = TakePhotoFromLibraryAction1DidFinishTaking
+    end
+  end
+end

@@ -1,0 +1,87 @@
+object frmX5WebBrowser: TfrmX5WebBrowser
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 480
+  ClientWidth = 371
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  DesignerMasterStyle = 0
+  object pnlToolBar: TPanel
+    Align = Top
+    Size.Width = 371.000000000000000000
+    Size.Height = 50.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    object btnGo: TButton
+      Align = Right
+      Position.X = 321.000000000000000000
+      Size.Width = 50.000000000000000000
+      Size.Height = 50.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'nexttoolbutton'
+      TabOrder = 0
+      Text = #21069#24448
+      OnClick = btnGoClick
+    end
+    object edtUrl: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      Align = Client
+      TabOrder = 1
+      Text = 'http://www.baidu.com'
+      Margins.Top = 10.000000000000000000
+      Size.Width = 221.000000000000000000
+      Size.Height = 40.000000000000000000
+      Size.PlatformDefault = False
+    end
+    object Button3: TButton
+      Position.X = 8.000000000000000000
+      Position.Y = 100.000000000000000000
+      Size.Width = 136.000000000000000000
+      Size.Height = 29.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 3
+      Text = #26597#30475#26412#22320'doc'
+      Visible = False
+    end
+    object Button2: TButton
+      Position.X = 160.000000000000000000
+      Position.Y = 100.000000000000000000
+      Size.Width = 136.000000000000000000
+      Size.Height = 29.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 2
+      Text = #26597#30475#26412#22320'pdf'
+      Visible = False
+    end
+    object btnGoBack: TButton
+      Align = Left
+      Size.Width = 50.000000000000000000
+      Size.Height = 50.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'arrowlefttoolbutton'
+      TabOrder = 6
+      OnClick = btnGoBackClick
+    end
+    object btnGoForward: TButton
+      Align = Left
+      Position.X = 50.000000000000000000
+      Size.Width = 50.000000000000000000
+      Size.Height = 50.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'arrowrighttoolbutton'
+      TabOrder = 5
+      OnClick = btnGoForwardClick
+    end
+  end
+  object ProgressBar1: TProgressBar
+    Align = Top
+    Orientation = Horizontal
+    Position.Y = 50.000000000000000000
+    Size.Width = 371.000000000000000000
+    Size.Height = 20.000000000000000000
+    Size.PlatformDefault = False
+  end
+end

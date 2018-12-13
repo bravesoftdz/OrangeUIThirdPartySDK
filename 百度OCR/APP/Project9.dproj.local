@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>1899-12-30 00:00:00.000.189,=E:\OrangeUIAppFramework\ThirdPartySDK\百度OCR\APP\BaiduOCRSDK\IOS_3_0_1\iOSApi.AipCaptureCardVC.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.609,E:\OrangeUIAppFramework\ThirdPartySDK\百度OCR\APP\BaiduOCRSDK\IOS_3_0_1\AipOcrSdk.framework\Headers\iOSApi.AipOcrSdk.pas=</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.938,E:\OrangeUIAppFramework\ThirdPartySDK\百度OCR\APP\Unit7.fmx=C:\Users\Administrator\Documents\Embarcadero\Studio\Projects\Unit7.fmx</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.555,=E:\OrangeUIAppFramework\ThirdPartySDK\百度OCR\APP\BaiduOCRSDK\IOS_3_0_1\iOSApi.AipOcrSdk.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.588,=E:\OrangeUIAppFramework\ThirdPartySDK\百度OCR\APP\BaiduOCRSDK\IOS_3_0_1\iOSApi.AipOcrService.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.238,=E:\OrangeUIAppFramework\ThirdPartySDK\百度OCR\APP\BaiduOCRSDK\IOS_3_0_1\AipOcrSdk.framework\Headers\iOSApi.AipOcrSdk.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.796,=E:\OrangeUIAppFramework\ThirdPartySDK\百度OCR\APP\BaiduOCRSDK\IOS_3_0_1\AipOcrSdk.framework\Headers\iOSApi.AipOcrService.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.938,E:\OrangeUIAppFramework\ThirdPartySDK\百度OCR\APP\Unit7.pas=C:\Users\Administrator\Documents\Embarcadero\Studio\Projects\Unit7.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.866,E:\OrangeUIAppFramework\ThirdPartySDK\百度OCR\APP\BaiduOCRSDK\IOS_3_0_1\AipOcrSdk.framework\Headers\iOSApi.AipOcrService.pas=</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.895,E:\OrangeUIAppFramework\ThirdPartySDK\百度OCR\APP\Project9.dproj=C:\Users\Administrator\Documents\Embarcadero\Studio\Projects\Project9.dproj</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.025,=C:\Users\Administrator\Documents\Embarcadero\Studio\Projects\Unit7.pas</Transaction>
+  </Transactions>
+	<ActiveMobileDevice>
+		<PMyMac iOSSimulator="iPhone5" iOSDevice64="_iosdevice_bb71c0fa911c33225d7711495470c9c631f22cc8" iOSDevice32="_iosdevice_bb71c0fa911c33225d7711495470c9c631f22cc8"/>
+	</ActiveMobileDevice>
+</BorlandProject>

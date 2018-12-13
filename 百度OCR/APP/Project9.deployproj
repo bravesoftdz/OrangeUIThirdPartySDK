@@ -1,0 +1,877 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <Import Condition="Exists('$(BDS)\bin\CodeGear.Deployment.targets')" Project="$(BDS)\bin\CodeGear.Deployment.targets"/>
+    <ProjectExtensions>
+        <ProjectFileVersion>12</ProjectFileVersion>
+    </ProjectExtensions>
+    <PropertyGroup>
+        <DeviceId Condition="'$(Platform)'=='Android'"/>
+        <DeviceId Condition="'$(Platform)'=='iOSDevice32'">bb71c0fa911c33225d7711495470c9c631f22cc8</DeviceId>
+        <DeviceId Condition="'$(Platform)'=='iOSDevice64'">bb71c0fa911c33225d7711495470c9c631f22cc8</DeviceId>
+        <DeviceId Condition="'$(Platform)'=='iOSSimulator'">DBD28A18-15F2-484D-AEF7-2EAD5F83A629</DeviceId>
+    </PropertyGroup>
+    <ItemGroup Condition="'$(Platform)'=='Win32'">
+        <DeployFile Include="Win32\Debug\Project9.exe" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Project9\</RemoteDir>
+            <RemoteName>Project9.exe</RemoteName>
+            <DeployClass>ProjectOutput</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+            <Required>True</Required>
+        </DeployFile>
+    </ItemGroup>
+    <ItemGroup Condition="'$(Platform)'=='iOSDevice64'">
+        <DeployFile Include=".\BaiduOCRSDK\IOS_3_0_1\AipOcrSdk.framework\paizhaoanniu@2x.png">
+            <RemoteDir>Project9.app\AipOcrSdk.framework\</RemoteDir>
+            <RemoteName>paizhaoanniu@2x.png</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>False</Overwrite>
+        </DeployFile>
+        <DeployFile Include=".\BaiduOCRSDK\IOS_3_0_1\AipBase.framework\Headers\AipBase.h">
+            <RemoteDir>Project9.app\AipBase.framework\Headers\</RemoteDir>
+            <RemoteName>AipBase.h</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>False</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPhone\FM_ApplicationIcon_57x57.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Project9.app\</RemoteDir>
+            <RemoteName>FM_ApplicationIcon_57x57.png</RemoteName>
+            <DeployClass>iPhone_AppIcon57</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include=".\BaiduOCRSDK\IOS_3_0_1\AipBase.framework\Headers\NSErrorHelper.h">
+            <RemoteDir>Project9.app\AipBase.framework\Headers\</RemoteDir>
+            <RemoteName>NSErrorHelper.h</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>False</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPhone\FM_ApplicationIcon_180x180.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Project9.app\</RemoteDir>
+            <RemoteName>FM_ApplicationIcon_180x180.png</RemoteName>
+            <DeployClass>iPhone_AppIcon180</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include=".\BaiduOCRSDK\IOS_3_0_1\AipOcrSdk.framework\Headers\AipOcrSdk.h">
+            <RemoteDir>Project9.app\AipOcrSdk.framework\Headers\</RemoteDir>
+            <RemoteName>AipOcrSdk.h</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>False</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPhone\FM_SpotlightSearchIcon_80x80.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Project9.app\</RemoteDir>
+            <RemoteName>FM_SpotlightSearchIcon_80x80.png</RemoteName>
+            <DeployClass>iPhone_Spotlight80</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include=".\BaiduOCRSDK\IOS_3_0_1\AipOcrSdk.framework\AipOcrSdk.storyboardc\ANZ-N0-y67-view-Tv2-ge-o8Q.nib">
+            <RemoteDir>Project9.app\AipOcrSdk.framework\AipOcrSdk.storyboardc\</RemoteDir>
+            <RemoteName>ANZ-N0-y67-view-Tv2-ge-o8Q.nib</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>False</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPad\FM_SettingIcon_29x29.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Project9.app\</RemoteDir>
+            <RemoteName>FM_SettingIcon_29x29.png</RemoteName>
+            <DeployClass>iPad_Setting29</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include=".\BaiduOCRSDK\IOS_3_0_1\AipOcrSdk.framework\xuanzhuan@2x.png">
+            <RemoteDir>Project9.app\AipOcrSdk.framework\</RemoteDir>
+            <RemoteName>xuanzhuan@2x.png</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>False</Overwrite>
+        </DeployFile>
+        <DeployFile Include=".\BaiduOCRSDK\IOS_3_0_1\AipOcrSdk.framework\AipOcrSdk">
+            <RemoteDir>Project9.app\AipOcrSdk.framework\</RemoteDir>
+            <RemoteName>AipOcrSdk</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>False</Overwrite>
+        </DeployFile>
+        <DeployFile Include="iOSDevice64\Release\Project9.entitlements" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Project9.app\..\</RemoteDir>
+            <RemoteName>Project9.entitlements</RemoteName>
+            <DeployClass>ProjectiOSEntitlements</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include=".\BaiduOCRSDK\IOS_3_0_1\AipOcrSdk.framework\Headers\AipOcrService.h">
+            <RemoteDir>Project9.app\AipOcrSdk.framework\Headers\</RemoteDir>
+            <RemoteName>AipOcrService.h</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>False</Overwrite>
+        </DeployFile>
+        <DeployFile Include=".\BaiduOCRSDK\IOS_3_0_1\AipOcrSdk.framework\Page 1@2x.png">
+            <RemoteDir>Project9.app\AipOcrSdk.framework\</RemoteDir>
+            <RemoteName>Page 1@2x.png</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>False</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPhone\FM_ApplicationIcon_114x114.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Project9.app\</RemoteDir>
+            <RemoteName>FM_ApplicationIcon_114x114.png</RemoteName>
+            <DeployClass>iPhone_AppIcon114</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include=".\BaiduOCRSDK\IOS_3_0_1\AipOcrSdk.framework\xuxian@2x.png">
+            <RemoteDir>Project9.app\AipOcrSdk.framework\</RemoteDir>
+            <RemoteName>xuxian@2x.png</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>False</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPad\FM_LaunchImageLandscape_2048x1496.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Project9.app\</RemoteDir>
+            <RemoteName>Default-Landscape@2x.png</RemoteName>
+            <DeployClass>iPad_Launch2048</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPhone\FM_LaunchImage_1242x2208.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Project9.app\</RemoteDir>
+            <RemoteName>Default-736h@3x.png</RemoteName>
+            <DeployClass>iPhone_Launch1242</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include=".\BaiduOCRSDK\IOS_3_0_1\AipOcrSdk.framework\AipOcrSdk.storyboardc\qVB-bS-VcD-view-pEK-B6-uAC.nib">
+            <RemoteDir>Project9.app\AipOcrSdk.framework\AipOcrSdk.storyboardc\</RemoteDir>
+            <RemoteName>qVB-bS-VcD-view-pEK-B6-uAC.nib</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>False</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPad\FM_ApplicationIcon_144x144.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Project9.app\</RemoteDir>
+            <RemoteName>FM_ApplicationIcon_144x144.png</RemoteName>
+            <DeployClass>iPad_AppIcon144</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include=".\BaiduOCRSDK\IOS_3_0_1\AipOcrSdk.framework\Modules\module.modulemap">
+            <RemoteDir>Project9.app\AipOcrSdk.framework\Modules\</RemoteDir>
+            <RemoteName>module.modulemap</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>False</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPhone\FM_SpotlightSearchIcon_40x40.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Project9.app\</RemoteDir>
+            <RemoteName>FM_SpotlightSearchIcon_40x40.png</RemoteName>
+            <DeployClass>iPhone_Spotlight40</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include=".\BaiduOCRSDK\IOS_3_0_1\AipOcrSdk.framework\AipOcrSdk.storyboardc\Info.plist">
+            <RemoteDir>Project9.app\AipOcrSdk.framework\AipOcrSdk.storyboardc\</RemoteDir>
+            <RemoteName>Info.plist</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>False</Overwrite>
+        </DeployFile>
+        <DeployFile Include=".\BaiduOCRSDK\IOS_3_0_1\AipBase.framework\AipBase">
+            <RemoteDir>Project9.app\AipBase.framework\</RemoteDir>
+            <RemoteName>AipBase</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>False</Overwrite>
+        </DeployFile>
+        <DeployFile Include=".\BaiduOCRSDK\IOS_3_0_1\AipOcrSdk.framework\guanbi@2x.png">
+            <RemoteDir>Project9.app\AipOcrSdk.framework\</RemoteDir>
+            <RemoteName>guanbi@2x.png</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>False</Overwrite>
+        </DeployFile>
+        <DeployFile Include="iOSDevice64\Release\ResourceRules.plist" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Project9.app\</RemoteDir>
+            <RemoteName>ResourceRules.plist</RemoteName>
+            <DeployClass>ProjectiOSDeviceResourceRules</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include=".\BaiduOCRSDK\IOS_3_0_1\AipBase.framework\Info.plist">
+            <RemoteDir>Project9.app\AipBase.framework\</RemoteDir>
+            <RemoteName>Info.plist</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>False</Overwrite>
+        </DeployFile>
+        <DeployFile Include=".\BaiduOCRSDK\IOS_3_0_1\AipOcrSdk.framework\tuku@3x.png">
+            <RemoteDir>Project9.app\AipOcrSdk.framework\</RemoteDir>
+            <RemoteName>tuku@3x.png</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>False</Overwrite>
+        </DeployFile>
+        <DeployFile Include=".\BaiduOCRSDK\IOS_3_0_1\AipOcrSdk.framework\queding@3x.png">
+            <RemoteDir>Project9.app\AipOcrSdk.framework\</RemoteDir>
+            <RemoteName>queding@3x.png</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>False</Overwrite>
+        </DeployFile>
+        <DeployFile Include=".\BaiduOCRSDK\IOS_3_0_1\AipBase.framework\Modules\module.modulemap">
+            <RemoteDir>Project9.app\AipBase.framework\Modules\</RemoteDir>
+            <RemoteName>module.modulemap</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>False</Overwrite>
+        </DeployFile>
+        <DeployFile Include=".\BaiduOCRSDK\IOS_3_0_1\AipOcrSdk.framework\dengpao_dianjihou@3x.png">
+            <RemoteDir>Project9.app\AipOcrSdk.framework\</RemoteDir>
+            <RemoteName>dengpao_dianjihou@3x.png</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>False</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPad\FM_SettingIcon_58x58.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Project9.app\</RemoteDir>
+            <RemoteName>FM_SettingIcon_58x58.png</RemoteName>
+            <DeployClass>iPad_Setting58</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include=".\BaiduOCRSDK\IOS_3_0_1\IdcardQuality.framework\IdcardQuality">
+            <RemoteDir>Project9.app\IdcardQuality.framework\</RemoteDir>
+            <RemoteName>IdcardQuality</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>False</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPad\FM_LaunchImagePortrait_1536x2008.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Project9.app\</RemoteDir>
+            <RemoteName>Default-Portrait@2x.png</RemoteName>
+            <DeployClass>iPad_Launch1536</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="iOSDevice64\Release\Project9.dSYM" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Project9.app\..\$(PROJECTNAME).app.dSYM\Contents\Resources\DWARF\</RemoteDir>
+            <RemoteName>Project9</RemoteName>
+            <DeployClass>ProjectiOSDeviceDebug</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include=".\BaiduOCRSDK\IOS_3_0_1\IdcardQuality.framework\quality_model_secret.bin">
+            <RemoteDir>Project9.app\IdcardQuality.framework\</RemoteDir>
+            <RemoteName>quality_model_secret.bin</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>False</Overwrite>
+        </DeployFile>
+        <DeployFile Include=".\BaiduOCRSDK\IOS_3_0_1\AipOcrSdk.framework\Headers\AipCaptureCardVC.h">
+            <RemoteDir>Project9.app\AipOcrSdk.framework\Headers\</RemoteDir>
+            <RemoteName>AipCaptureCardVC.h</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>False</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPhone\FM_ApplicationIcon_87x87.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Project9.app\</RemoteDir>
+            <RemoteName>FM_ApplicationIcon_87x87.png</RemoteName>
+            <DeployClass>iPhone_AppIcon87</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPad\FM_LaunchImagePortrait_768x1004.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Project9.app\</RemoteDir>
+            <RemoteName>Default~ipad.png</RemoteName>
+            <DeployClass>iPad_Launch768</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPad\FM_LaunchImageLandscape_2048x1536.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Project9.app\</RemoteDir>
+            <RemoteName>Default-Landscape@2x~ipad.png</RemoteName>
+            <DeployClass>iPad_Launch2048x1536</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="iOSDevice64\Release\Project9.info.plist" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Project9.app\</RemoteDir>
+            <RemoteName>Info.plist</RemoteName>
+            <DeployClass>ProjectiOSInfoPList</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include=".\BaiduOCRSDK\IOS_3_0_1\IdcardQuality.framework\Modules\module.modulemap">
+            <RemoteDir>Project9.app\IdcardQuality.framework\Modules\</RemoteDir>
+            <RemoteName>module.modulemap</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>False</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPad\FM_LaunchImageLandscape_1024x768.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Project9.app\</RemoteDir>
+            <RemoteName>Default-Landscape~ipad.png</RemoteName>
+            <DeployClass>iPad_Launch1024x768</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPad\FM_LaunchImagePortrait_768x1024.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Project9.app\</RemoteDir>
+            <RemoteName>Default-Portrait~ipad.png</RemoteName>
+            <DeployClass>iPad_Launch768x1024</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include=".\BaiduOCRSDK\IOS_3_0_1\IdcardQuality.framework\integrity_model_secret.bin">
+            <RemoteDir>Project9.app\IdcardQuality.framework\</RemoteDir>
+            <RemoteName>integrity_model_secret.bin</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>False</Overwrite>
+        </DeployFile>
+        <DeployFile Include=".\BaiduOCRSDK\IOS_3_0_1\AipBase.framework\Headers\AipTokenManager.h">
+            <RemoteDir>Project9.app\AipBase.framework\Headers\</RemoteDir>
+            <RemoteName>AipTokenManager.h</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>False</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPhone\FM_ApplicationIcon_60x60.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Project9.app\</RemoteDir>
+            <RemoteName>FM_ApplicationIcon_60x60.png</RemoteName>
+            <DeployClass>iPhone_AppIcon60</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include=".\BaiduOCRSDK\IOS_3_0_1\IdcardQuality.framework\Headers\IdcardQuality.h">
+            <RemoteDir>Project9.app\IdcardQuality.framework\Headers\</RemoteDir>
+            <RemoteName>IdcardQuality.h</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>False</Overwrite>
+        </DeployFile>
+        <DeployFile Include=".\BaiduOCRSDK\IOS_3_0_1\AipOcrSdk.framework\dengpao@3x.png">
+            <RemoteDir>Project9.app\AipOcrSdk.framework\</RemoteDir>
+            <RemoteName>dengpao@3x.png</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>False</Overwrite>
+        </DeployFile>
+        <DeployFile Include=".\BaiduOCRSDK\IOS_3_0_1\AipOcrSdk.framework\guan@3x.png">
+            <RemoteDir>Project9.app\AipOcrSdk.framework\</RemoteDir>
+            <RemoteName>guan@3x.png</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>False</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPad\FM_SpotlightSearchIcon_80x80.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Project9.app\</RemoteDir>
+            <RemoteName>FM_SpotlightSearchIcon_80x80.png</RemoteName>
+            <DeployClass>iPad_SpotLight80</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include=".\BaiduOCRSDK\IOS_3_0_1\AipOcrSdk.framework\guanbi@3x.png">
+            <RemoteDir>Project9.app\AipOcrSdk.framework\</RemoteDir>
+            <RemoteName>guanbi@3x.png</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>False</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPad\FM_ApplicationIcon_76x76.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Project9.app\</RemoteDir>
+            <RemoteName>FM_ApplicationIcon_76x76.png</RemoteName>
+            <DeployClass>iPad_AppIcon76</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include=".\BaiduOCRSDK\IOS_3_0_1\IdcardQuality.framework\_CodeSignature\CodeResources">
+            <RemoteDir>Project9.app\IdcardQuality.framework\_CodeSignature\</RemoteDir>
+            <RemoteName>CodeResources</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>False</Overwrite>
+        </DeployFile>
+        <DeployFile Include=".\BaiduOCRSDK\IOS_3_0_1\AipOcrSdk.framework\Info.plist">
+            <RemoteDir>Project9.app\AipOcrSdk.framework\</RemoteDir>
+            <RemoteName>Info.plist</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>False</Overwrite>
+        </DeployFile>
+        <DeployFile Include=".\BaiduOCRSDK\IOS_3_0_1\IdcardQuality.framework\Headers\IdcardQualityAdaptor.h">
+            <RemoteDir>Project9.app\IdcardQuality.framework\Headers\</RemoteDir>
+            <RemoteName>IdcardQualityAdaptor.h</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>False</Overwrite>
+        </DeployFile>
+        <DeployFile Include=".\BaiduOCRSDK\IOS_3_0_1\AipOcrSdk.framework\paizhaoanniu_dianjihou@2x.png">
+            <RemoteDir>Project9.app\AipOcrSdk.framework\</RemoteDir>
+            <RemoteName>paizhaoanniu_dianjihou@2x.png</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>False</Overwrite>
+        </DeployFile>
+        <DeployFile Include=".\BaiduOCRSDK\IOS_3_0_1\AipOcrSdk.framework\Headers\AipGeneralVC.h">
+            <RemoteDir>Project9.app\AipOcrSdk.framework\Headers\</RemoteDir>
+            <RemoteName>AipGeneralVC.h</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>False</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPhone\FM_LaunchImage_640x1136.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Project9.app\</RemoteDir>
+            <RemoteName>Default-568h@2x.png</RemoteName>
+            <DeployClass>iPhone_Launch640x1136</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPhone\FM_ApplicationIcon_120x120.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Project9.app\</RemoteDir>
+            <RemoteName>FM_ApplicationIcon_120x120.png</RemoteName>
+            <DeployClass>iPhone_AppIcon120</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPad\FM_LaunchImageLandscape_1024x748.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Project9.app\</RemoteDir>
+            <RemoteName>Default-Landscape.png</RemoteName>
+            <DeployClass>iPad_Launch1024</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPad\FM_SpotlightSearchIcon_50x50.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Project9.app\</RemoteDir>
+            <RemoteName>FM_SpotlightSearchIcon_50x50.png</RemoteName>
+            <DeployClass>iPad_SpotLight50</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPhone\FM_LaunchImage_320x480.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Project9.app\</RemoteDir>
+            <RemoteName>Default.png</RemoteName>
+            <DeployClass>iPhone_Launch320</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include=".\BaiduOCRSDK\IOS_3_0_1\AipOcrSdk.framework\paizhaoanniu@3x.png">
+            <RemoteDir>Project9.app\AipOcrSdk.framework\</RemoteDir>
+            <RemoteName>paizhaoanniu@3x.png</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>False</Overwrite>
+        </DeployFile>
+        <DeployFile Include=".\BaiduOCRSDK\IOS_3_0_1\AipOcrSdk.framework\tuku@2x.png">
+            <RemoteDir>Project9.app\AipOcrSdk.framework\</RemoteDir>
+            <RemoteName>tuku@2x.png</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>False</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPhone\FM_LaunchImage_750x1334.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Project9.app\</RemoteDir>
+            <RemoteName>Default-667h@2x.png</RemoteName>
+            <DeployClass>iPhone_Launch750</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPad\FM_ApplicationIcon_152x152.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Project9.app\</RemoteDir>
+            <RemoteName>FM_ApplicationIcon_152x152.png</RemoteName>
+            <DeployClass>iPad_AppIcon152</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include=".\BaiduOCRSDK\IOS_3_0_1\AipOcrSdk.framework\Page 1@3x.png">
+            <RemoteDir>Project9.app\AipOcrSdk.framework\</RemoteDir>
+            <RemoteName>Page 1@3x.png</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>False</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPad\FM_ApplicationIcon_72x72.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Project9.app\</RemoteDir>
+            <RemoteName>FM_ApplicationIcon_72x72.png</RemoteName>
+            <DeployClass>iPad_AppIcon72</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include=".\BaiduOCRSDK\IOS_3_0_1\AipOcrSdk.framework\paizhaoanniu_dianjihou@3x.png">
+            <RemoteDir>Project9.app\AipOcrSdk.framework\</RemoteDir>
+            <RemoteName>paizhaoanniu_dianjihou@3x.png</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>False</Overwrite>
+        </DeployFile>
+        <DeployFile Include=".\BaiduOCRSDK\IOS_3_0_1\AipOcrSdk.framework\xuanzhuan@3x.png">
+            <RemoteDir>Project9.app\AipOcrSdk.framework\</RemoteDir>
+            <RemoteName>xuanzhuan@3x.png</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>False</Overwrite>
+        </DeployFile>
+        <DeployFile Include=".\BaiduOCRSDK\IOS_3_0_1\AipBase.framework\Headers\AipOpenUDID.h">
+            <RemoteDir>Project9.app\AipBase.framework\Headers\</RemoteDir>
+            <RemoteName>AipOpenUDID.h</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>False</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPhone\FM_SpotlightSearchIcon_29x29.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Project9.app\</RemoteDir>
+            <RemoteName>FM_SpotlightSearchIcon_29x29.png</RemoteName>
+            <DeployClass>iPhone_Spotlight29</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include=".\BaiduOCRSDK\IOS_3_0_1\AipOcrSdk.framework\AipOcrSdk.storyboardc\AipCaptureCardVC.nib">
+            <RemoteDir>Project9.app\AipOcrSdk.framework\AipOcrSdk.storyboardc\</RemoteDir>
+            <RemoteName>AipCaptureCardVC.nib</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>False</Overwrite>
+        </DeployFile>
+        <DeployFile Include=".\BaiduOCRSDK\IOS_3_0_1\AipOcrSdk.framework\dengpao_dianjihou@2x.png">
+            <RemoteDir>Project9.app\AipOcrSdk.framework\</RemoteDir>
+            <RemoteName>dengpao_dianjihou@2x.png</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>False</Overwrite>
+        </DeployFile>
+        <DeployFile Include=".\BaiduOCRSDK\IOS_3_0_1\AipBase.framework\_CodeSignature\CodeResources">
+            <RemoteDir>Project9.app\AipBase.framework\_CodeSignature\</RemoteDir>
+            <RemoteName>CodeResources</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>False</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPad\FM_SpotlightSearchIcon_40x40.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Project9.app\</RemoteDir>
+            <RemoteName>FM_SpotlightSearchIcon_40x40.png</RemoteName>
+            <DeployClass>iPad_SpotLight40</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="iOSDevice64\Release\Project9" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Project9.app\</RemoteDir>
+            <RemoteName>Project9</RemoteName>
+            <DeployClass>ProjectOutput</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+            <Required>True</Required>
+        </DeployFile>
+        <DeployFile Include=".\BaiduOCRSDK\IOS_3_0_1\IdcardQuality.framework\Headers\idcard_quality.h">
+            <RemoteDir>Project9.app\IdcardQuality.framework\Headers\</RemoteDir>
+            <RemoteName>idcard_quality.h</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>False</Overwrite>
+        </DeployFile>
+        <DeployFile Include=".\BaiduOCRSDK\IOS_3_0_1\AipOcrSdk.framework\dengpao@2x.png">
+            <RemoteDir>Project9.app\AipOcrSdk.framework\</RemoteDir>
+            <RemoteName>dengpao@2x.png</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>False</Overwrite>
+        </DeployFile>
+        <DeployFile Include=".\BaiduOCRSDK\IOS_3_0_1\IdcardQuality.framework\.DS_Store">
+            <RemoteDir>Project9.app\IdcardQuality.framework\</RemoteDir>
+            <RemoteName>.DS_Store</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>False</Overwrite>
+        </DeployFile>
+        <DeployFile Include=".\BaiduOCRSDK\IOS_3_0_1\IdcardQuality.framework\Info.plist">
+            <RemoteDir>Project9.app\IdcardQuality.framework\</RemoteDir>
+            <RemoteName>Info.plist</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>False</Overwrite>
+        </DeployFile>
+        <DeployFile Include=".\BaiduOCRSDK\IOS_3_0_1\AipOcrSdk.framework\AipOcrSdk.storyboardc\AipGeneralVC.nib">
+            <RemoteDir>Project9.app\AipOcrSdk.framework\AipOcrSdk.storyboardc\</RemoteDir>
+            <RemoteName>AipGeneralVC.nib</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>False</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPad\FM_SpotlightSearchIcon_100x100.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Project9.app\</RemoteDir>
+            <RemoteName>FM_SpotlightSearchIcon_100x100.png</RemoteName>
+            <DeployClass>iPad_SpotLight100</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPhone\FM_LaunchImage_2208x1242.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Project9.app\</RemoteDir>
+            <RemoteName>Default-Landscape-736h@3x.png</RemoteName>
+            <DeployClass>iPhone_Launch2208</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include=".\BaiduOCRSDK\IOS_3_0_1\AipOcrSdk.framework\queding@2x.png">
+            <RemoteDir>Project9.app\AipOcrSdk.framework\</RemoteDir>
+            <RemoteName>queding@2x.png</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>False</Overwrite>
+        </DeployFile>
+        <DeployFile Include=".\BaiduOCRSDK\IOS_3_0_1\AipOcrSdk.framework\xuxian@3x.png">
+            <RemoteDir>Project9.app\AipOcrSdk.framework\</RemoteDir>
+            <RemoteName>xuxian@3x.png</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>False</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPhone\FM_LaunchImage_640x960.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Project9.app\</RemoteDir>
+            <RemoteName>Default@2x.png</RemoteName>
+            <DeployClass>iPhone_Launch640</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPhone\FM_SpotlightSearchIcon_58x58.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Project9.app\</RemoteDir>
+            <RemoteName>FM_SpotlightSearchIcon_58x58.png</RemoteName>
+            <DeployClass>iPhone_Spotlight58</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include=".\BaiduOCRSDK\IOS_3_0_1\AipOcrSdk.framework\_CodeSignature\CodeResources">
+            <RemoteDir>Project9.app\AipOcrSdk.framework\_CodeSignature\</RemoteDir>
+            <RemoteName>CodeResources</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>False</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPad\FM_LaunchImagePortrait_1536x2048.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Project9.app\</RemoteDir>
+            <RemoteName>Default-Portrait@2x~ipad.png</RemoteName>
+            <DeployClass>iPad_Launch1536x2048</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include=".\BaiduOCRSDK\IOS_3_0_1\AipOcrSdk.framework\guan@2x.png">
+            <RemoteDir>Project9.app\AipOcrSdk.framework\</RemoteDir>
+            <RemoteName>guan@2x.png</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>False</Overwrite>
+        </DeployFile>
+    </ItemGroup>
+    <ItemGroup Condition="'$(Platform)'=='iOSDevice32'"/>
+    <ItemGroup Condition="'$(Platform)'=='Android'"/>
+    <ItemGroup Condition="'$(Platform)'=='iOSSimulator'">
+        <DeployFile Include="$(BDS)\Redist\iossimulator\libcgunwind.1.0.dylib">
+            <RemoteDir>Project9.app\</RemoteDir>
+            <RemoteName>libcgunwind.1.0.dylib</RemoteName>
+            <DeployClass>DependencyModule</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\Redist\iossimulator\libPCRE.dylib">
+            <RemoteDir>Project9.app\</RemoteDir>
+            <RemoteName>libPCRE.dylib</RemoteName>
+            <DeployClass>DependencyModule</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+    </ItemGroup>
+</Project>

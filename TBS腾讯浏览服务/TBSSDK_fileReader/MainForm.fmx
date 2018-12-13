@@ -1,0 +1,103 @@
+object frmMain: TfrmMain
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 480
+  ClientWidth = 350
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  DesignerMasterStyle = 0
+  object btnWebBrowser: TButton
+    Align = Top
+    Margins.Top = 10.000000000000000000
+    Position.Y = 60.000000000000000000
+    Size.Width = 350.000000000000000000
+    Size.Height = 40.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    Text = #27983#35272#32593#39029
+    OnClick = btnWebBrowserClick
+  end
+  object Button4: TButton
+    Align = Top
+    Margins.Top = 10.000000000000000000
+    Position.Y = 110.000000000000000000
+    Size.Width = 350.000000000000000000
+    Size.Height = 40.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 7
+    Text = #25171#24320'doc'
+    OnClick = Button4Click
+  end
+  object Button5: TButton
+    Align = Top
+    Margins.Top = 10.000000000000000000
+    Position.Y = 160.000000000000000000
+    Size.Width = 350.000000000000000000
+    Size.Height = 40.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 6
+    Text = #25171#24320'pdf'
+    OnClick = Button5Click
+  end
+  object Layout1: TLayout
+    Align = Top
+    Size.Width = 350.000000000000000000
+    Size.Height = 50.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 8
+    object Rectangle1: TRectangle
+      Align = Contents
+      Fill.Color = claCornflowerblue
+      Sides = [Bottom]
+      Size.Width = 350.000000000000000000
+      Size.Height = 50.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Color = claLightgray
+    end
+    object Label1: TLabel
+      Align = Contents
+      StyledSettings = [Family, Style]
+      Size.Width = 350.000000000000000000
+      Size.Height = 50.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.Size = 14.000000000000000000
+      TextSettings.FontColor = claWhite
+      TextSettings.HorzAlign = Center
+      Text = #33150#35759'X5'#20869#26680
+    end
+  end
+  object btnPlayVideo: TButton
+    Align = Top
+    Margins.Top = 10.000000000000000000
+    Position.Y = 242.000000000000000000
+    Size.Width = 350.000000000000000000
+    Size.Height = 40.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 5
+    Text = #25773#25918#35270#39057
+    OnClick = btnPlayVideoClick
+  end
+  object edtVideoUrl: TComboEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    Align = Top
+    TabOrder = 9
+    ItemHeight = 19.000000000000000000
+    Items.Strings = (
+      'rtmp://live.hkstv.hk.lxdns.com/live/hks'
+      'http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4'
+      'rtsp://rtsp.vdowowza.tvb.com/tvblive/mobileinews200.stream'
+      'rtmp://live.hkstv.hk.lxdns.com/live/hks'
+      'rtsp://live.3gv.ifeng.com/live/71'
+      'http://live.hkstv.hk.lxdns.com/live/hks/playlist.m3u8')
+    ItemIndex = 0
+    Text = 'rtmp://live.hkstv.hk.lxdns.com/live/hks'
+    Position.Y = 210.000000000000000000
+    Margins.Top = 10.000000000000000000
+    Size.Width = 350.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+  end
+end
