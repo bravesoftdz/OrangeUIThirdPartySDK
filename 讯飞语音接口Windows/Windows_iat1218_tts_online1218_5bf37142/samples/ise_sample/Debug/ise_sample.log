@@ -1,0 +1,7 @@
+﻿C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets(366,5): warning MSB8003: Could not find WindowsSDKDir variable from the registry.  TargetFrameworkVersion or PlatformToolset may be set to an invalid version number.
+  Could Not Find E:\MyFiles\ThirdPartySDK\讯飞语音接口Windows\Windows_iat1218_tts_online1218_5bf37142\bin\ise_sample.exe
+          1 file(s) copied.
+  TRACKER : 错误 TRK0005: 未能找到: “CL.exe”。系统找不到指定的文件。
+  
+  
+C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppCommon.targets(356,5): error MSB6006: “CL.exe”已退出，代码为 5。

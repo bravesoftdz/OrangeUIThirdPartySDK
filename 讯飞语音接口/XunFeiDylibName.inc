@@ -1,0 +1,1 @@
+'.\XunFeiSDK\libs\iflyMSC.framework\iflyMSC'

@@ -1,0 +1,44 @@
+object frmMain: TfrmMain
+  Left = 0
+  Top = 0
+  Caption = 'Form4'
+  ClientHeight = 480
+  ClientWidth = 362
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object btnRegisterPush: TButton
+    Position.X = 128.000000000000000000
+    Position.Y = 56.000000000000000000
+    Size.Width = 80.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    Text = #27880#20876#25512#36865
+    OnClick = btnRegisterPushClick
+  end
+  object edtRegID: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 1
+    Position.X = 24.000000000000000000
+    Position.Y = 104.000000000000000000
+    Size.Width = 313.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object btnUnRegisterPush: TButton
+    Position.X = 128.000000000000000000
+    Position.Y = 152.000000000000000000
+    TabOrder = 2
+    Text = #27880#38144#25512#36865
+    OnClick = btnUnRegisterPushClick
+  end
+  object Button1: TButton
+    Position.X = 128.000000000000000000
+    Position.Y = 288.000000000000000000
+    TabOrder = 3
+    Text = #21551#21160'APP'
+    OnClick = Button1Click
+  end
+end

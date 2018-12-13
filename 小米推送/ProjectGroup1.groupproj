@@ -1,0 +1,48 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{B07B1985-B150-4C4E-B345-66030E921052}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="XiaoMiPush_D10_1.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\讯飞语音接口\XunFeiTest_D10_1.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="XiaoMiPush_D10_1">
+        <MSBuild Projects="XiaoMiPush_D10_1.dproj"/>
+    </Target>
+    <Target Name="XiaoMiPush_D10_1:Clean">
+        <MSBuild Projects="XiaoMiPush_D10_1.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="XiaoMiPush_D10_1:Make">
+        <MSBuild Projects="XiaoMiPush_D10_1.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="XunFeiTest_D10_1">
+        <MSBuild Projects="..\讯飞语音接口\XunFeiTest_D10_1.dproj"/>
+    </Target>
+    <Target Name="XunFeiTest_D10_1:Clean">
+        <MSBuild Projects="..\讯飞语音接口\XunFeiTest_D10_1.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="XunFeiTest_D10_1:Make">
+        <MSBuild Projects="..\讯飞语音接口\XunFeiTest_D10_1.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="XiaoMiPush_D10_1;XunFeiTest_D10_1"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="XiaoMiPush_D10_1:Clean;XunFeiTest_D10_1:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="XiaoMiPush_D10_1:Make;XunFeiTest_D10_1:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

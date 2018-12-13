@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>1899-12-30 00:00:00.000.129,C:\Users\OM\Documents\Embarcadero\Studio\Projects\xiao\Unit1.pas=C:\Users\OM\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.738,=C:\Users\OM\Documents\Embarcadero\Studio\Projects\xiao\Androidapi.JNI.xiaoxu.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.333,=E:\MyFiles\ThirdPartySDK\商米刷卡支付\APP\xiaoxu.jar</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.129,C:\Users\OM\Documents\Embarcadero\Studio\Projects\xiao\Unit1.fmx=C:\Users\OM\Documents\Embarcadero\Studio\Projects\Unit1.fmx</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.380,=C:\Users\OM\Documents\Embarcadero\Studio\Projects\xiao\xiaoxu.jar</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.870,=C:\Users\OM\Documents\Embarcadero\Studio\Projects\xiao\classes.jar</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.803,C:\Users\OM\Documents\Embarcadero\Studio\Projects\xiao\Androidapi.JNI.classes.pas=</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.475,=C:\Users\OM\Documents\Embarcadero\Studio\Projects\xiao\Androidapi.JNI.classes.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.403,=C:\Users\OM\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.794,C:\Users\OM\Documents\Embarcadero\Studio\Projects\xiao\Project1.dproj=C:\Users\OM\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.738,E:\MyFiles\ThirdPartySDK\商米刷卡支付\APP\xiaoxu.jar=</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.466,C:\Users\OM\Documents\Embarcadero\Studio\Projects\xiao\Project1.dproj=C:\Users\OM\Documents\Embarcadero\Studio\Projects\xiao\DSunmi.dproj</Transaction>
+    <Transaction>2018-05-30 14:03:46.373,=E:\MyFiles\ThirdPartySDK\商米刷卡支付\APP\SummiPaySDK\Androidapi.JNI.mysummipay.pas</Transaction>
+    <Transaction>2018-05-30 14:03:53.982,E:\MyFiles\ThirdPartySDK\商米刷卡支付\APP\xiaoxu.jar=</Transaction>
+    <Transaction>2018-05-30 14:04:08.418,=E:\MyFiles\ThirdPartySDK\商米刷卡支付\APP\SummiPaySDK\mysummipay.jar</Transaction>
+    <Transaction>2018-05-30 14:04:08.422,=E:\MyFiles\ThirdPartySDK\商米刷卡支付\APP\SummiPaySDK\xiaoxu.jar</Transaction>
+    <Transaction>2018-05-30 14:04:33.571,=E:\MyFiles\ThirdPartySDK\商米刷卡支付\APP\SummiPaySDK\Androidapi.JNI.xiaoxu.pas</Transaction>
+    <Transaction>2018-05-30 14:04:50.223,E:\MyFiles\ThirdPartySDK\商米刷卡支付\APP\SummiPaySDK\mysummipay.jar=</Transaction>
+    <Transaction>2018-05-30 14:06:43.149,=E:\MyFiles\ThirdPartySDK\商米刷卡支付\APP\SummiPaySDK\mysummipay.jar</Transaction>
+  </Transactions>
+	<ActiveMobileDevice>
+		<PfirstDelphiToMac iOSSimulator="iPhone5"/>
+		<NoProfile Android="P121184B01042"/>
+	</ActiveMobileDevice>
+	<BT_BuildType>Debug</BT_BuildType>
+</BorlandProject>
